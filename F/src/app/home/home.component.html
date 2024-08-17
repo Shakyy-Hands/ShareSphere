@@ -1,0 +1,15 @@
+<p class="big-text">Home</p>
+<p>Welcome to ShareSphere, a dropbox website where you can save blocks of text we call "pages" and share it with others.</p>
+<p>The Terrestrial tab takes you to your pages you have saved on the sql database.</p>
+<p>The Extraterrestrial tab takes you to pages others have shared with you!</p>
+<p>Click "Login" to login or create an account.</p>
+
+<div class="container" >
+    Click to check the database is working - - ->
+    <button (click)="getWelcomeMessage()" class="btn btn-success">Database Checker</button>
+</div>
+
+<div class="container" *ngIf="welcomeMessage">
+    <H2>Welcome Message:</H2>
+    {{welcomeMessage}}
+</div>

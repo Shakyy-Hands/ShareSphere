@@ -1,0 +1,28 @@
+<!-- <p>a works!</p> -->
+<H3> Page id : {{page.id}}, owner : {{page.owner}}</H3>
+
+<!-- <textarea [(ngModel)]="text" class="large-textbox"></textarea> -->
+<textarea [(ngModel)]="text" class="auto-resize-textbox" (input)="adjustHeight($event)">{{text}}</textarea>
+<button (click)="savePage()" class="btn btn-success">Save Page</button> 
+<button  (click)="getPage()" class="btn btn-success">Reset Page</button> 
+<!-- *ngIf="newPage" -->
+<!-- <div class="container">
+    <h1>Textbox and Button Example</h1>
+    <form (ngSubmit)="printName()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" [(ngModel)]="name" name="name" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Print Name</button>
+    </form>
+    <div *ngIf="printedName">
+      <p>You entered: {{ printedName }}</p>
+    </div>
+  </div> -->
+
+
+
+<!-- 
+<textarea [(ngModel)]="text" class="auto-resize-textbox" (input)="adjustHeight($event)"></textarea>
+<button (click)="getWelcomeMessage()" class="btn btn-success">Get Message</button> 
+-->

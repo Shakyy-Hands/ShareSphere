@@ -1,0 +1,12 @@
+.pink_button {
+    background-color: pink;
+    color: white;
+    /* Set the text color to contrast with the pink background */
+    border: none;
+    /* Remove the default button border for a cleaner look */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    cursor: pointer;
+    /* Add a pointer cursor for better user experience */
+    border-radius: 5px;
+}

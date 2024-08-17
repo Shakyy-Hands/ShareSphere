@@ -1,0 +1,9 @@
+   Todo
+Make menu options generate according to the number of ids in database
+Home page
+Tie database to frontend urls
+
+
+---------------------
+   Done
+Menu component

@@ -1,0 +1,38 @@
+<h1> My Pages</h1>
+
+<div class="alert alert-success" *ngIf='message'>{{message}}</div>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>owner</th>
+                <th>text</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let page of pages">
+                <!-- <td>{{todo.id}}</td> -->
+                <td>{{page.id}}</td>
+                <td>{{page.owner}}</td>
+                <td>{{page.text}}</td>
+                <td><button (click)="updatePage(page.id)" class="btn btn-success">Update</button></td>
+                <td><button (click)="deletePage(page.id)" class="btn btn-warning pink_button">Delete</button></td>
+                <!-- <td><button class="pink_button">pink</button></td> -->
+            </tr>
+        </tbody>
+
+    </table>
+
+    <!-- <div class="container" *ngIf="welcomeMessageFromService">
+        <H2>Session Storage </H2>
+        {{tokenFromService}}
+        <button (click)="getWelcomeMessage()" class="btn btn-success"></button>
+    </div>  -->
+
+    <div class="row">
+        <button (click)="addPage()" class="btn btn-success">Add</button>
+    </div>
+    
+</div>
